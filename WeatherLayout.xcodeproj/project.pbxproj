@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43284C341D7689000057143C /* Blood.png in Resources */ = {isa = PBXBuildFile; fileRef = 43284C311D7689000057143C /* Blood.png */; };
+		43284C351D7689000057143C /* Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43284C321D7689000057143C /* Moon.png */; };
+		43284C361D7689000057143C /* Sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 43284C331D7689000057143C /* Sun.png */; };
 		4333DF7F1D752B7C00D8DE8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333DF7E1D752B7C00D8DE8C /* AppDelegate.swift */; };
 		4333DF811D752B7C00D8DE8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333DF801D752B7C00D8DE8C /* ViewController.swift */; };
 		4333DF841D752B7C00D8DE8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4333DF821D752B7C00D8DE8C /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43284C311D7689000057143C /* Blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blood.png; sourceTree = "<group>"; };
+		43284C321D7689000057143C /* Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moon.png; sourceTree = "<group>"; };
+		43284C331D7689000057143C /* Sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sun.png; sourceTree = "<group>"; };
 		4333DF7B1D752B7C00D8DE8C /* WeatherLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4333DF7E1D752B7C00D8DE8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4333DF801D752B7C00D8DE8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 		4333DF721D752B7C00D8DE8C = {
 			isa = PBXGroup;
 			children = (
+				43284C311D7689000057143C /* Blood.png */,
+				43284C321D7689000057143C /* Moon.png */,
+				43284C331D7689000057143C /* Sun.png */,
 				4333DF7D1D752B7C00D8DE8C /* WeatherLayout */,
 				4333DF921D752B7C00D8DE8C /* WeatherLayoutTests */,
 				4333DF9D1D752B7C00D8DE8C /* WeatherLayoutUITests */,
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					4333DF7A1D752B7C00D8DE8C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7LUU77YJS9;
 					};
 					4333DF8E1D752B7C00D8DE8C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -229,7 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43284C361D7689000057143C /* Sun.png in Resources */,
+				43284C341D7689000057143C /* Blood.png in Resources */,
 				4333DF891D752B7C00D8DE8C /* LaunchScreen.storyboard in Resources */,
+				43284C351D7689000057143C /* Moon.png in Resources */,
 				4333DF861D752B7C00D8DE8C /* Assets.xcassets in Resources */,
 				4333DF841D752B7C00D8DE8C /* Main.storyboard in Resources */,
 			);
@@ -401,10 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeatherLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = c.ttb10912.WeatherLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeatherLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = c.ttb10912.WeatherLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +503,7 @@
 				4333DFA51D752B7C00D8DE8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4333DFA61D752B7C00D8DE8C /* Build configuration list for PBXNativeTarget "WeatherLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +512,7 @@
 				4333DFA81D752B7C00D8DE8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4333DFA91D752B7C00D8DE8C /* Build configuration list for PBXNativeTarget "WeatherLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +521,7 @@
 				4333DFAB1D752B7C00D8DE8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
